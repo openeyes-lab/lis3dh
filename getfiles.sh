@@ -4,9 +4,7 @@ kernel_ver=$(uname -r)
 
 version=${kernel_ver%.*}.y
 
-echo $str
-
-URL="https://raw.githubusercontent.com/raspberrypi/linux/rpi-5.8.y/drivers/iio"
+URL="https://raw.githubusercontent.com/raspberrypi/linux/rpi-$version/drivers/iio"
 
 # Check if build dir exist
 
