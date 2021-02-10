@@ -18,7 +18,7 @@ if dtc -@ -b 0 -I dts -O dtb -o lis3dh-accel.dtbo dts/lis3dh.dts ; then
 	sudo mv lis3dh-accel.dtbo /boot/overlays
 else
 	echo "fail to compile dts"
-	exit
+	exit -1
 fi
 
 if grep -q "dtoverlay=lis3dh-accel" /boot/config.txt ; then
@@ -36,6 +36,12 @@ LIB="/lib/modules/$(uname -r)/kernel/drivers/iio/common/st_sensors"
 if [ ! -d "$LIB" ]; then
         sudo mkdir -p $LIB
 fi
+
+bash getfiles.sh
+if [ $? -ne 0 ]; then
+	echo -e "\e[31mERROR!!! failed to get files\e[39m"
+	exit -1
+fi    
 
 cd build
 
