@@ -4,7 +4,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](http://www.gnu.org/licenses/lgpl-3.0)
 
-This repository contains Linux drivers for the ST Microelectronics lis3dh 3-axis accelerometer implemented on OPEN-EYES-II devices from OPEN-EYES S.r.L.
+This repository contains Linux drivers for the ST Microelectronics lis3dh 3-axis accelerometer implemented on OPEN-EYES-RPI devices from OPEN-EYES S.r.L.
 
 This driver is licensed under the Gnu Public License.
 
